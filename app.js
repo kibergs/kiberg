@@ -16,199 +16,45 @@ const TASKS = [
       ]
     }
   },
-  {
-    id: 2,
-    title: "Добавить description в блог Сипуни",
-    action: {
-      type: "link",
-      value: "https://tilda.ru/projects/settings/?projectid=7532289"
-    }
-  },
-  {
-    id: 3,
-    title: "Домонтировать видео по звонилке",
-    action: {
-      type: "app",
-      value: "C:\\Users\\Мария\\AppData\\Local\\CapCut\\Apps\\8.3.0.3497\\CapCut.exe"
-    }
-  },
+  { id: 2, title: "Добавить description в блог Сипуни", action: { type: "link", value: "https://tilda.ru/projects/settings/?projectid=7532289" } },
+  { id: 3, title: "Домонтировать видео по звонилке", action: { type: "app", value: "C:\\Users\\Мария\\AppData\\Local\\CapCut\\Apps\\8.3.0.3497\\CapCut.exe" } },
   {
     id: 4,
     title: "Составить свой OKR",
-    action: {
-      type: "link",
-      value:
-        "https://docs.google.com/spreadsheets/d/1S6YwVvu6E4cQn8gqwe9Ynqo-NWiMItcHXiv5F34NEOo/edit?gid=1406862300#gid=1406862300"
-    }
+    action: { type: "link", value: "https://docs.google.com/spreadsheets/d/1S6YwVvu6E4cQn8gqwe9Ynqo-NWiMItcHXiv5F34NEOo/edit?gid=1406862300#gid=1406862300" }
   },
   {
     id: 5,
     title: "Обновить Habit Tracker",
-    action: {
-      type: "link",
-      value:
-        "https://docs.google.com/spreadsheets/d/1VsxwZiQmz6ZOhGlRyFwgt9V8WVn5XpCevzeWG1d4LPw/edit?gid=0#gid=0"
-    }
+    action: { type: "link", value: "https://docs.google.com/spreadsheets/d/1VsxwZiQmz6ZOhGlRyFwgt9V8WVn5XpCevzeWG1d4LPw/edit?gid=0#gid=0" }
   },
-  {
-    id: 6,
-    title: "Выпустить газету АМОКОНФ",
-    action: {
-      type: "link",
-      value: "https://sipuni.planfix.ru/task/237715"
-    }
-  },
-  {
-    id: 7,
-    title: "Придумать вопросы для Медникова",
-    action: {
-      type: "hint",
-      value: "Экспортируй историю чата и собери фактуру по Медникову."
-    }
-  },
-  {
-    id: 8,
-    title: "Провести интервью с Медниковым",
-    action: {
-      type: "hint",
-      value: "Сначала покажи вопросы и письмо Свете."
-    }
-  },
-  {
-    id: 9,
-    title: "Домонтировать все видео в блог",
-    action: {
-      type: "app",
-      value: "C:\\Users\\Мария\\AppData\\Local\\CapCut\\Apps\\8.3.0.3497\\CapCut.exe"
-    }
-  },
+  { id: 6, title: "Выпустить газету АМОКОНФ", action: { type: "link", value: "https://sipuni.planfix.ru/task/237715" } },
+  { id: 7, title: "Придумать вопросы для Медникова", action: { type: "hint", value: "Экспортируй историю чата и собери фактуру по Медникову." } },
+  { id: 8, title: "Провести интервью с Медниковым", action: { type: "hint", value: "Сначала покажи вопросы и письмо Свете." } },
+  { id: 9, title: "Домонтировать все видео в блог", action: { type: "app", value: "C:\\Users\\Мария\\AppData\\Local\\CapCut\\Apps\\8.3.0.3497\\CapCut.exe" } },
   {
     id: 10,
     title: "Опубликовать все видео в блог",
     action: {
       type: "subtasks",
       meta: "Нажми на подзадачу, чтобы увидеть шаг.",
-      items: [
-        "Отложи YouTube",
-        "Отложи Instagram",
-        "Положи в черновики TikTok",
-        "Добавь будильники для выпуска",
-        "Выпускай в TikTok по будильнику"
-      ]
+      items: ["Отложи YouTube", "Отложи Instagram", "Положи в черновики TikTok", "Добавь будильники для выпуска", "Выпускай в TikTok по будильнику"]
     }
   },
-  {
-    id: 11,
-    title: "Уточнить по упаковкам джиббитсов",
-    action: {
-      type: "app",
-      value: "WhatsApp"
-    }
-  },
-  {
-    id: 12,
-    title: "Пойти на тренировку в Олимпию",
-    action: {
-      type: "hint",
-      value: "Собери воду, возьми карточку и иди туда, где уже был."
-    }
-  },
-  {
-    id: 13,
-    title: "Прибрать десктоп",
-    action: {
-      type: "hint",
-      value: "Сверни все окна на компьютере."
-    }
-  },
-  {
-    id: 14,
-    title: "Скрыть иноагентские разборы",
-    action: {
-      type: "hint",
-      value: "Открой TikTok и начни с начала."
-    }
-  },
-  {
-    id: 15,
-    title: "Подать заявку блогера в РКН",
-    action: {
-      type: "hint",
-      value: "Открой Госуслуги."
-    }
-  },
-  {
-    id: 16,
-    title: "Узнать, могу ли я продавать курс",
-    action: {
-      type: "hint",
-      value: "Дай задачу ChatGPT, он узнает."
-    }
-  },
-  {
-    id: 17,
-    title: "Записать весь курс по гитаре",
-    action: {
-      type: "link",
-      value: "file:///K:/Загрузки/Chrome/guitar_course_motivation_app_v2.html"
-    }
-  },
-  {
-    id: 18,
-    title: "Смонтировать весь курс по гитаре",
-    action: {
-      type: "link",
-      value: "file:///K:/Загрузки/Chrome/guitar_course_motivation_app_v2.html"
-    }
-  },
-  {
-    id: 19,
-    title: "Воскресить блог (по ощущениям)",
-    action: {
-      type: "hint",
-      value: "Если видео набрало 50К просмотров — ты воскресил блог."
-    }
-  },
-  {
-    id: 20,
-    title: "Проколоть уши",
-    action: {
-      type: "hint",
-      value: "Узнай, где лучше сделать."
-    }
-  },
-  {
-    id: 21,
-    title: "Быть готовым к АМОКОНФ",
-    action: {
-      type: "link",
-      value: "https://sipuni.planfix.ru/task/231844"
-    }
-  },
-  {
-    id: 22,
-    title: "Написать 60 постов в Telegram",
-    action: {
-      type: "link",
-      value: "https://t.me/kibergs"
-    }
-  },
-  {
-    id: 23,
-    title: "Анонсировать курс",
-    action: {
-      type: "link",
-      value: "https://t.me/kibergs"
-    }
-  },
-  {
-    id: 24,
-    title: "Boosty — добавить видео как я делаю табы и разборы",
-    action: {
-      type: "link",
-      value: "https://boosty.to/kiberg"
-    }
-  },
+  { id: 11, title: "Уточнить по упаковкам джиббитсов", action: { type: "app", value: "WhatsApp" } },
+  { id: 12, title: "Пойти на тренировку в Олимпию", action: { type: "hint", value: "Собери воду, возьми карточку и иди туда, где уже был." } },
+  { id: 13, title: "Прибрать десктоп", action: { type: "hint", value: "Сверни все окна на компьютере." } },
+  { id: 14, title: "Скрыть иноагентские разборы", action: { type: "hint", value: "Открой TikTok и начни с начала." } },
+  { id: 15, title: "Подать заявку блогера в РКН", action: { type: "hint", value: "Открой Госуслуги." } },
+  { id: 16, title: "Узнать, могу ли я продавать курс", action: { type: "hint", value: "Дай задачу ChatGPT, он узнает." } },
+  { id: 17, title: "Записать весь курс по гитаре", action: { type: "link", value: "file:///K:/Загрузки/Chrome/guitar_course_motivation_app_v2.html" } },
+  { id: 18, title: "Смонтировать весь курс по гитаре", action: { type: "link", value: "file:///K:/Загрузки/Chrome/guitar_course_motivation_app_v2.html" } },
+  { id: 19, title: "Воскресить блог (по ощущениям)", action: { type: "hint", value: "Если видео набрало 50К просмотров — ты воскресил блог." } },
+  { id: 20, title: "Проколоть уши", action: { type: "hint", value: "Узнай, где лучше сделать." } },
+  { id: 21, title: "Быть готовым к АМОКОНФ", action: { type: "link", value: "https://sipuni.planfix.ru/task/231844" } },
+  { id: 22, title: "Написать 60 постов в Telegram", action: { type: "link", value: "https://t.me/kibergs" } },
+  { id: 23, title: "Анонсировать курс", action: { type: "link", value: "https://t.me/kibergs" } },
+  { id: 24, title: "Boosty — добавить видео как я делаю табы и разборы", action: { type: "link", value: "https://boosty.to/kiberg" } },
   {
     id: 25,
     title: "Заказать настольный футбол на АМОКОНФ",
@@ -218,17 +64,29 @@ const TASKS = [
         "https://www.google.com/search?q=%D0%BD%D0%B0%D1%81%D1%82%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9+%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB+%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B0&oq=%D0%BD%D0%B0%D1%81%D1%82%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9+%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB+%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B0&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDI1MDVqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"
     }
   },
+  { id: 26, title: "Подготовиться к военкомату", action: { type: "hint", value: "Найди повестку и посмотри, что там." } }
+];
+
+const FORBIDDEN_RULES = [
   {
-    id: 26,
-    title: "Подготовиться к военкомату",
-    action: {
-      type: "hint",
-      value: "Найди повестку и посмотри, что там."
-    }
+    id: "games",
+    text: "Играть в компьютерные и любые видеоигры",
+    penalties: ["Прочитать 33% любой книги", "250 отжиманий", "Перегладить 10 видов одежды"]
+  },
+  {
+    id: "movies",
+    text: "Смотреть сериалы и фильмы",
+    penalties: ["200 отжиманий", "400 приседаний", "Покупаю Марии подарок за 1500₽"]
+  },
+  {
+    id: "porn",
+    text: "Смотреть порно",
+    penalties: ["Покупаю Марии подарок на сумму 2500₽", "Заказываю большую пиццу на дом", "Нужно пройти 12 тысяч шагов"]
   }
 ];
 
 const STORAGE_KEY = "kiberg-task-status";
+const PENALTY_STORAGE_KEY = "kiberg-penalties";
 
 const taskList = document.getElementById("taskList");
 const taskTemplate = document.getElementById("taskTemplate");
@@ -236,28 +94,103 @@ const subtaskTemplate = document.getElementById("subtaskTemplate");
 const progressText = document.getElementById("progressText");
 const progressFill = document.getElementById("progressFill");
 const progressTrack = document.querySelector(".progress__track");
+const forbiddenList = document.getElementById("forbiddenList");
+const penaltyList = document.getElementById("penaltyList");
+const penaltyHint = document.getElementById("penaltyHint");
 
-const statusById = loadStatus();
+const statusById = loadJson(STORAGE_KEY);
+const penalties = loadJson(PENALTY_STORAGE_KEY, []);
 
+renderForbidden();
 renderTasks();
+renderPenalties();
 updateProgress();
 
-function loadStatus() {
+function loadJson(key, fallback = {}) {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
+    const raw = localStorage.getItem(key);
     if (!raw) {
-      return {};
+      return fallback;
     }
-
     const parsed = JSON.parse(raw);
-    return typeof parsed === "object" && parsed !== null ? parsed : {};
+    return typeof parsed === "object" && parsed !== null ? parsed : fallback;
   } catch {
-    return {};
+    return fallback;
   }
 }
 
 function saveStatus() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(statusById));
+}
+
+function savePenalties() {
+  localStorage.setItem(PENALTY_STORAGE_KEY, JSON.stringify(penalties));
+}
+
+function renderForbidden() {
+  forbiddenList.innerHTML = "";
+
+  for (const rule of FORBIDDEN_RULES) {
+    const item = document.createElement("li");
+    item.className = "forbidden-item";
+
+    const text = document.createElement("span");
+    text.textContent = rule.text;
+
+    const button = document.createElement("button");
+    button.type = "button";
+    button.textContent = "Согрешил";
+
+    button.addEventListener("click", () => {
+      const penalty = getRandomItem(rule.penalties);
+      penalties.push({ id: crypto.randomUUID(), sourceId: rule.id, sourceText: rule.text, text: penalty, done: false });
+      savePenalties();
+      renderPenalties();
+      alert(`Наказание: ${penalty}`);
+    });
+
+    item.append(text, button);
+    forbiddenList.append(item);
+  }
+}
+
+function renderPenalties() {
+  penaltyList.innerHTML = "";
+  const activeCount = penalties.filter((penalty) => !penalty.done).length;
+
+  penaltyHint.textContent =
+    activeCount > 0
+      ? `Есть ${activeCount} незакрытых наказаний. Пока не отметишь их, обычные задачи нельзя закрывать.`
+      : "Пока пусто — держись режима ✊";
+
+  for (const penalty of penalties) {
+    const item = document.createElement("li");
+    item.className = "penalty-item";
+
+    const label = document.createElement("label");
+    label.className = "penalty-label";
+
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.checked = Boolean(penalty.done);
+
+    const text = document.createElement("span");
+    text.textContent = `За «${penalty.sourceText}»: ${penalty.text}`;
+
+    checkbox.addEventListener("change", () => {
+      penalty.done = checkbox.checked;
+      savePenalties();
+      renderPenalties();
+    });
+
+    label.append(checkbox, text);
+    item.append(label);
+    penaltyList.append(item);
+  }
+}
+
+function hasUnfinishedPenalties() {
+  return penalties.some((penalty) => !penalty.done);
 }
 
 function renderTasks() {
@@ -274,6 +207,12 @@ function renderTasks() {
     node.classList.toggle("is-done", checkbox.checked);
 
     checkbox.addEventListener("change", () => {
+      if (checkbox.checked && hasUnfinishedPenalties()) {
+        checkbox.checked = false;
+        alert("Сначала отметь все наказания в блоке «Наказания к выполнению».");
+        return;
+      }
+
       statusById[task.id] = checkbox.checked;
       saveStatus();
       node.classList.toggle("is-done", checkbox.checked);
@@ -281,7 +220,6 @@ function renderTasks() {
     });
 
     setupAction(task, titleWrap, meta, subtaskList);
-
     taskList.append(node);
   }
 }
@@ -297,7 +235,6 @@ function setupAction(task, titleWrap, meta, subtaskList) {
     link.target = "_blank";
     link.rel = "noopener noreferrer";
     link.textContent = titlePrefix;
-
     titleWrap.append(link);
     meta.textContent = action.value;
     return;
@@ -311,17 +248,13 @@ function setupAction(task, titleWrap, meta, subtaskList) {
 
   if (action.type === "subtasks") {
     meta.textContent = action.meta;
-
     for (const subtask of action.items) {
       const subtaskNode = subtaskTemplate.content.firstElementChild.cloneNode(true);
       const subtaskButton = subtaskNode.querySelector(".subtask-button");
       subtaskButton.textContent = subtask;
-      subtaskButton.addEventListener("click", () => {
-        alert(`Подзадача: ${subtask}`);
-      });
+      subtaskButton.addEventListener("click", () => alert(`Подзадача: ${subtask}`));
       subtaskList.append(subtaskNode);
     }
-
     button.addEventListener("click", () => {
       subtaskList.scrollIntoView({ behavior: "smooth", block: "nearest" });
     });
@@ -330,27 +263,20 @@ function setupAction(task, titleWrap, meta, subtaskList) {
 
   if (action.type === "hint") {
     meta.textContent = "Нажми на название задачи, чтобы увидеть подсказку.";
-    button.addEventListener("click", () => {
-      alert(action.value);
-    });
+    button.addEventListener("click", () => alert(action.value));
     return;
   }
 
   if (action.type === "app") {
     const maybePath = toFileUrl(action.value);
-
     if (maybePath) {
       meta.textContent = `Пробуем открыть автоматически: ${action.value}`;
       button.addEventListener("click", () => {
         window.open(maybePath, "_blank");
         navigator.clipboard
           .writeText(action.value)
-          .then(() => {
-            alert("Попробовал открыть программу. Если не открылось — путь уже скопирован в буфер обмена.");
-          })
-          .catch(() => {
-            alert(`Попробовал открыть программу. Если не открылось — открой вручную: ${action.value}`);
-          });
+          .then(() => alert("Попробовал открыть программу. Если не открылось — путь уже скопирован."))
+          .catch(() => alert(`Попробовал открыть программу. Если не открылось — открой вручную: ${action.value}`));
       });
       return;
     }
@@ -359,31 +285,28 @@ function setupAction(task, titleWrap, meta, subtaskList) {
     button.addEventListener("click", () => {
       window.open("https://web.whatsapp.com/", "_blank", "noopener,noreferrer");
     });
-    return;
   }
-
-  titleWrap.innerHTML = `<span class="task-title-text">${titlePrefix}</span>`;
 }
 
 function toFileUrl(pathValue) {
   if (typeof pathValue !== "string") {
     return "";
   }
-
   const isWindowsPath = /^[a-zA-Z]:\\/.test(pathValue);
   if (!isWindowsPath) {
     return "";
   }
+  return encodeURI(`file:///${pathValue.replace(/\\/g, "/")}`);
+}
 
-  const normalized = pathValue.replace(/\\/g, "/");
-  return encodeURI(`file:///${normalized}`);
+function getRandomItem(items) {
+  return items[Math.floor(Math.random() * items.length)];
 }
 
 function updateProgress() {
   const completed = TASKS.filter((task) => Boolean(statusById[task.id])).length;
   const total = TASKS.length;
   const percent = Math.round((completed / total) * 100);
-
   progressText.textContent = `${completed} / ${total}`;
   progressFill.style.width = `${percent}%`;
   progressTrack.setAttribute("aria-valuenow", String(completed));

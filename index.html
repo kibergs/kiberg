@@ -25,11 +25,13 @@
 
       <section class="forbidden">
         <h2>Запрещено, пока не закроешь задачи</h2>
-        <ul>
-          <li>Играть в компьютерные и любые видеоигры</li>
-          <li>Смотреть сериалы и фильмы</li>
-          <li>Смотреть порно</li>
-        </ul>
+        <ul id="forbiddenList" class="forbidden-list"></ul>
+
+        <div class="penalty-box">
+          <h3>Наказания к выполнению</h3>
+          <p id="penaltyHint" class="penalty-hint">Пока пусто — держись режима ✊</p>
+          <ul id="penaltyList" class="penalty-list" aria-live="polite"></ul>
+        </div>
       </section>
 
       <section class="tasks-section">

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лист задач</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app__header">
+        <h1>Лист задач</h1>
+        <p class="subtitle">Ничего нового, пока не закроешь этот список.</p>
+      </header>
+
+      <section class="progress" aria-label="Прогресс выполнения задач">
+        <div class="progress__meta">
+          <strong>Прогресс</strong>
+          <span id="progressText">0 / 26</span>
+        </div>
+        <div class="progress__track" role="progressbar" aria-valuemin="0" aria-valuemax="26" aria-valuenow="0">
+          <div id="progressFill" class="progress__fill"></div>
+        </div>
+      </section>
+
+      <section class="forbidden">
+        <h2>Запрещено, пока не закроешь задачи</h2>
+        <ul>
+          <li>Играть в компьютерные и любые видеоигры</li>
+          <li>Смотреть сериалы и фильмы</li>
+          <li>Смотреть порно</li>
+        </ul>
+      </section>
+
+      <section class="tasks-section">
+        <h2>Список задач</h2>
+        <ul id="taskList" class="task-list" aria-live="polite"></ul>
+      </section>
+    </main>
+
+    <template id="taskTemplate">
+      <li class="task-item">
+        <label class="task-main">
+          <input type="checkbox" class="task-checkbox" />
+          <span class="task-title"></span>
+        </label>
+        <button type="button" class="task-action">Открыть</button>
+        <p class="task-meta"></p>
+        <ul class="subtask-list"></ul>
+      </li>
+    </template>
+
+    <template id="subtaskTemplate">
+      <li class="subtask-item">
+        <button type="button" class="subtask-button"></button>
+      </li>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>

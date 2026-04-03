@@ -1,0 +1,181 @@
+:root {
+  color-scheme: light;
+  --bg: #f6f7fb;
+  --card: #fff;
+  --text: #21243d;
+  --muted: #626682;
+  --accent: #4a67ff;
+  --accent-soft: #dbe2ff;
+  --success: #2f9e44;
+  --danger: #b42318;
+  --border: #e3e7f2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+
+.app__header h1 {
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--muted);
+}
+
+.progress,
+.forbidden,
+.tasks-section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.progress__meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.progress__track {
+  width: 100%;
+  height: 12px;
+  background: var(--accent-soft);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress__fill {
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #4a67ff 0%, #7a8fff 100%);
+  transition: width 0.25s ease;
+}
+
+.forbidden {
+  border-left: 6px solid var(--danger);
+}
+
+.forbidden h2 {
+  margin-top: 0;
+}
+
+.forbidden ul {
+  margin-bottom: 0;
+}
+
+.task-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.task-item {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    "main action"
+    "meta action"
+    "subtasks subtasks";
+  gap: 6px 10px;
+  align-items: center;
+}
+
+.task-main {
+  grid-area: main;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.task-checkbox {
+  margin-top: 2px;
+  width: 18px;
+  height: 18px;
+}
+
+.task-action {
+  grid-area: action;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 10px;
+  cursor: pointer;
+  background: var(--accent-soft);
+  color: #1f3bc4;
+  font-weight: 600;
+}
+
+.task-action:hover {
+  background: #ccd7ff;
+}
+
+.task-meta {
+  grid-area: meta;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.subtask-list {
+  grid-area: subtasks;
+  list-style: decimal;
+  padding-left: 24px;
+  margin: 2px 0 0;
+  display: grid;
+  gap: 4px;
+}
+
+.subtask-button {
+  border: none;
+  background: transparent;
+  color: #3046b8;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+}
+
+.subtask-button:hover {
+  text-decoration: underline;
+}
+
+.task-item.is-done .task-title {
+  text-decoration: line-through;
+  color: var(--success);
+}
+
+@media (max-width: 700px) {
+  .task-item {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "main"
+      "action"
+      "meta"
+      "subtasks";
+  }
+
+  .task-action {
+    width: fit-content;
+  }
+}

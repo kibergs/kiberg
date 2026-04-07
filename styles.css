@@ -1,0 +1,225 @@
+:root {
+  color-scheme: light;
+  --bg: #f6f7fb;
+  --card: #fff;
+  --text: #21243d;
+  --muted: #626682;
+  --accent: #4a67ff;
+  --accent-soft: #dbe2ff;
+  --success: #2f9e44;
+  --danger: #b42318;
+  --border: #e3e7f2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+
+.app__header h1 {
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--muted);
+}
+
+.progress,
+.forbidden,
+.tasks-section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.progress__meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.progress__track {
+  width: 100%;
+  height: 12px;
+  background: var(--accent-soft);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress__fill {
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #4a67ff 0%, #7a8fff 100%);
+  transition: width 0.25s ease;
+}
+
+.forbidden {
+  border-left: 6px solid var(--danger);
+}
+
+.forbidden h2,
+.forbidden h3 {
+  margin-top: 0;
+}
+
+.forbidden-list,
+.penalty-list,
+.task-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.forbidden-item {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.forbidden-item button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 10px;
+  cursor: pointer;
+  background: #ffe2e0;
+  color: #8a130a;
+  font-weight: 700;
+}
+
+.penalty-box {
+  margin-top: 14px;
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+}
+
+.penalty-hint {
+  margin: 0 0 10px;
+  color: var(--muted);
+}
+
+.penalty-item {
+  border: 1px dashed #f2b8b5;
+  background: #fff7f6;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.penalty-label {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  align-items: start;
+}
+
+.penalty-label input {
+  margin-top: 2px;
+}
+
+.task-item {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  display: grid;
+  gap: 8px;
+}
+
+.task-main {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  align-items: start;
+}
+
+.task-checkbox {
+  margin-top: 2px;
+  width: 18px;
+  height: 18px;
+}
+
+.task-title-wrap {
+  min-width: 0;
+}
+
+.task-title-link,
+.task-title-button,
+.task-title-text {
+  display: inline;
+  font-weight: 600;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.task-title-link,
+.task-title-button {
+  color: #1f3bc4;
+  text-decoration: underline;
+}
+
+.task-title-button {
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+.task-meta {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  overflow-wrap: anywhere;
+}
+
+.subtask-list {
+  list-style: decimal;
+  padding-left: 28px;
+  margin: 2px 0 0;
+  display: grid;
+  gap: 4px;
+}
+
+.subtask-button {
+  border: none;
+  background: transparent;
+  color: #3046b8;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.subtask-button:hover,
+.task-title-link:hover,
+.task-title-button:hover {
+  text-decoration: underline;
+}
+
+.task-item.is-done .task-title-link,
+.task-item.is-done .task-title-button,
+.task-item.is-done .task-title-text {
+  text-decoration: line-through;
+  color: var(--success);
+}
